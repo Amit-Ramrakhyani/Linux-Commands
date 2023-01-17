@@ -1,0 +1,32 @@
+Detailed Linux Commands
+
+1. touch file_name(and/or).file_type: This command is used to create a new file or if the file already exist, then change the access and modify date and time of the file.
+2. stat file_name(and/or).file_type: This command is used to display the status of the file.
+3. touch -t YYYYMMDDhhmm.ss file_name(and/or).file_type: This command is used to change the access and modify date and time of the file with YYYYMMDD as the date and hhmm.ss as time. 
+4. touch -a file_name(and/or).file_type: This command is used to change the access date and time of the file.
+5. touch -m file_name(and/or).file_type: This command is used to change the modify date and time of the file.
+6. touch -c file_name(and/or).file_type: This command is used to change the access and modify date and time of the file only if the file already exist and doesn't create a new file 
+                                         if it doesn't exist, unlike touch file_name(and/or).file_type.
+7. touch -r file_name(and/or).file_type file_name(and/or).file_type: This command is used to change the access and modify date and time of the file with the access and modify date and time 
+                                                                  of the file_name(and/or).file_type.
+
+8. rm file_name(and/or).file_type: This command is used to remove the file.
+9. rm -f file_name(and/or).file_type: This command is used to remove the file without asking for confirmation.
+10. rm -r directory_name: This command is used to remove the directory if it exist. Or else it will give a warning "cannot remove 'New': No such file or directory"
+11. rm -rf directory_name: This command is used to remove the directory if it exist. It will not give any warning if the directory doesn't exist.
+12. rm -i directory_name: This command is used to remove the directory if it exist after asking for confirmation. Or else it will give 
+                            a warning "cannot remove 'New': No such file or directory"
+13. rm -v file_name(and/or).file_type: This command is used to remove the directory if it exist and will give a warning "removed directory 'New'". Or else it will give 
+                            a warning "cannot remove 'New': No such file or directory"                        
+14. rm -d directory_name: This command is used to remove the directory if it exist and is empty. Or else it will give a warning "rm: cannot remove 'New': Directory not empty"
+
+15. mkdir directory_name: This command is used to create a new directory.
+16. rmdir directory_name: This command is used to remove the directory if it exist and is empty. Or else it will give a warning "rmdir: failed to remove 
+                          'New': Directory not empty"
+
+16. cp [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file.
+17. cp -i [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file after asking for confirmation.
+18. cp -r [directory_name] [directory_name]: This command is used to copy the directory to the new directory.
+19. cp -v [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file and will give a 
+                                                                        warning "'new.txt' -> 'new1.txt'".
+
