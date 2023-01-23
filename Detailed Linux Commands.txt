@@ -30,3 +30,16 @@ Detailed Linux Commands
 19. cp -v [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file and will give a 
                                                                         warning "'new.txt' -> 'new1.txt'".
 
+20. ifconfig: This command is used to display the network interface configuration.
+21. ifconfig -a: This command is used to display the network interface configuration of all the network interfaces.
+22. ifconfig -s: This command is used to display the network interface configuration in a short format.
+23. ifconfig -v: This command is used to display the network interface configuration in a verbose format.
+24. ifconfig -a -v: This command is used to display the network interface configuration of all the network interfaces in a verbose format.
+25. ifconfig -a -s: This command is used to display the network interface configuration of all the network interfaces in a short format.
+26. ifconfig -a -s -v: This command is used to display the network interface configuration of all the network interfaces in a short and verbose format.
+27. ifconfig interface [up/down]: This command is used to bring up or down the network interface.
+28. ifconfig interface [up/down] [ip_address]: This command is used to bring up or down the network interface and assign the ip_address to the network interface.
+29. ifconfig interface add [ip_address]: This command is used to add the ip_address to the network interface.
+30. ifconfig interface del [ip_address]: This command is used to delete the ip_address from the network interface.
+31. ifconfig interface add [addr]/[prefix_length]: This command is used to add the ip_address to the network interface.
+32. ifconfig interface del [addr]/[prefix_length]: This command is used to delete the ip_address from the network interface.
