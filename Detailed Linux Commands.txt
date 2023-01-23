@@ -1,45 +1,75 @@
 Detailed Linux Commands
 
-1. touch file_name(and/or).file_type: This command is used to create a new file or if the file already exist, then change the access and modify date and time of the file.
-2. stat file_name(and/or).file_type: This command is used to display the status of the file.
-3. touch -t YYYYMMDDhhmm.ss file_name(and/or).file_type: This command is used to change the access and modify date and time of the file with YYYYMMDD as the date and hhmm.ss as time. 
-4. touch -a file_name(and/or).file_type: This command is used to change the access date and time of the file.
-5. touch -m file_name(and/or).file_type: This command is used to change the modify date and time of the file.
-6. touch -c file_name(and/or).file_type: This command is used to change the access and modify date and time of the file only if the file already exist and doesn't create a new file 
+-- touch file_name(and/or).file_type: This command is used to create a new file or if the file already exist, then change the access and modify date and time of the file.
+-- stat file_name(and/or).file_type: This command is used to display the status of the file.
+-- touch -t YYYYMMDDhhmm.ss file_name(and/or).file_type: This command is used to change the access and modify date and time of the file with YYYYMMDD as the date and hhmm.ss as time. 
+-- touch -a file_name(and/or).file_type: This command is used to change the access date and time of the file.
+-- touch -m file_name(and/or).file_type: This command is used to change the modify date and time of the file.
+-- touch -c file_name(and/or).file_type: This command is used to change the access and modify date and time of the file only if the file already exist and doesn't create a new file 
                                          if it doesn't exist, unlike touch file_name(and/or).file_type.
-7. touch -r file_name(and/or).file_type file_name(and/or).file_type: This command is used to change the access and modify date and time of the file with the access and modify date and time 
+-- touch -r file_name(and/or).file_type file_name(and/or).file_type: This command is used to change the access and modify date and time of the file with the access and modify date and time 
                                                                   of the file_name(and/or).file_type.
 
-8. rm file_name(and/or).file_type: This command is used to remove the file.
-9. rm -f file_name(and/or).file_type: This command is used to remove the file without asking for confirmation.
-10. rm -r directory_name: This command is used to remove the directory if it exist. Or else it will give a warning "cannot remove 'New': No such file or directory"
-11. rm -rf directory_name: This command is used to remove the directory if it exist. It will not give any warning if the directory doesn't exist.
-12. rm -i directory_name: This command is used to remove the directory if it exist after asking for confirmation. Or else it will give 
+-- rm file_name(and/or).file_type: This command is used to remove the file.
+-- rm -f file_name(and/or).file_type: This command is used to remove the file without asking for confirmation.
+-- rm -r directory_name: This command is used to remove the directory if it exist. Or else it will give a warning "cannot remove 'New': No such file or directory"
+-- rm -rf directory_name: This command is used to remove the directory if it exist. It will not give any warning if the directory doesn't exist.
+-- rm -i directory_name: This command is used to remove the directory if it exist after asking for confirmation. Or else it will give 
                             a warning "cannot remove 'New': No such file or directory"
-13. rm -v file_name(and/or).file_type: This command is used to remove the directory if it exist and will give a warning "removed directory 'New'". Or else it will give 
+-- rm -v file_name(and/or).file_type: This command is used to remove the directory if it exist and will give a warning "removed directory 'New'". Or else it will give 
                             a warning "cannot remove 'New': No such file or directory"                        
-14. rm -d directory_name: This command is used to remove the directory if it exist and is empty. Or else it will give a warning "rm: cannot remove 'New': Directory not empty"
+-- rm -d directory_name: This command is used to remove the directory if it exist and is empty. Or else it will give a warning "rm: cannot remove 'New': Directory not empty"
 
-15. mkdir directory_name: This command is used to create a new directory.
-16. rmdir directory_name: This command is used to remove the directory if it exist and is empty. Or else it will give a warning "rmdir: failed to remove 
+-- mkdir directory_name: This command is used to create a new directory.
+-- rmdir directory_name: This command is used to remove the directory if it exist and is empty. Or else it will give a warning "rmdir: failed to remove 
                           'New': Directory not empty"
 
-16. cp [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file.
-17. cp -i [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file after asking for confirmation.
-18. cp -r [directory_name] [directory_name]: This command is used to copy the directory to the new directory.
-19. cp -v [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file and will give a 
+-- cp [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file.
+-- cp -i [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file after asking for confirmation.
+-- cp -r [directory_name] [directory_name]: This command is used to copy the directory to the new directory.
+-- cp -v [file_name(and/or).file_type] [file_name(and/or).file_type]: This command is used to copy the file to the new file and will give a 
                                                                         warning "'new.txt' -> 'new1.txt'".
 
-20. ifconfig: This command is used to display the network interface configuration.
-21. ifconfig -a: This command is used to display the network interface configuration of all the network interfaces.
-22. ifconfig -s: This command is used to display the network interface configuration in a short format.
-23. ifconfig -v: This command is used to display the network interface configuration in a verbose format.
-24. ifconfig -a -v: This command is used to display the network interface configuration of all the network interfaces in a verbose format.
-25. ifconfig -a -s: This command is used to display the network interface configuration of all the network interfaces in a short format.
-26. ifconfig -a -s -v: This command is used to display the network interface configuration of all the network interfaces in a short and verbose format.
-27. ifconfig interface [up/down]: This command is used to bring up or down the network interface.
-28. ifconfig interface [up/down] [ip_address]: This command is used to bring up or down the network interface and assign the ip_address to the network interface.
-29. ifconfig interface add [ip_address]: This command is used to add the ip_address to the network interface.
-30. ifconfig interface del [ip_address]: This command is used to delete the ip_address from the network interface.
-31. ifconfig interface add [addr]/[prefix_length]: This command is used to add the ip_address to the network interface.
-32. ifconfig interface del [addr]/[prefix_length]: This command is used to delete the ip_address from the network interface.
+-- ifconfig: This command is used to display the network interface configuration.
+-- ifconfig -a: This command is used to display the network interface configuration of all the network interfaces.
+-- ifconfig -s: This command is used to display the network interface configuration in a short format.
+-- ifconfig -v: This command is used to display the network interface configuration in a verbose format.
+-- ifconfig -a -v: This command is used to display the network interface configuration of all the network interfaces in a verbose format.
+-- ifconfig -a -s: This command is used to display the network interface configuration of all the network interfaces in a short format.
+-- ifconfig -a -s -v: This command is used to display the network interface configuration of all the network interfaces in a short and verbose format.
+-- ifconfig interface [up/down]: This command is used to bring up or down the network interface.
+-- ifconfig interface [up/down] [ip_address]: This command is used to bring up or down the network interface and assign the ip_address to the network interface.
+-- ifconfig interface add [ip_address]: This command is used to add the ip_address to the network interface.
+-- ifconfig interface del [ip_address]: This command is used to delete the ip_address from the network interface.
+-- ifconfig interface add [addr]/[prefix_length]: This command is used to add the ip_address to the network interface.
+-- ifconfig interface del [addr]/[prefix_length]: This command is used to delete the ip_address from the network interface.
+
+-- ping [ip_address]: This command is used to ping the ip_address.
+
+-- kill [process_id]: This command is used to kill the process with the process_id.
+-- kill -l: This command is used to list all the signals.
+-- kill -l [signal_name]: This command is used to list the signal number of the signal_name.
+-- kill -[signal_number] [process_id]: This command is used to kill the process with the process_id with the signal_number.
+-- kill -[signal_name] [process_id]: This command is used to kill the process with the process_id with the signal_name.
+
+-- ps: This command is used to display the processes.
+-- ps -a: This command is used to display the processes of all the users.
+
+
+-- sort [file_name(and/or).file_type]: This command is used to sort the file.
+-- sort -r [file_name(and/or).file_type]: This command is used to sort the file in reverse order.
+-- sort -n [file_name(and/or).file_type]: This command is used to sort the file in numerical order.
+-- sort -u [file_name(and/or).file_type]: This command is used to sort the file and remove the duplicate lines.
+-- sort -o [file_name1(and/or).file_type] [file_name2(and/or).file_type]: This command is used to sort the file and save the output to the file_name1(and/or).file_type.
+    --- sort file_name1(and/or).file_type > file_name2(and/or).file_type: This command is used to sort the file and save the output to the file_name2(and/or).file_type.
+-- sort -c [file_name(and/or).file_type]: This command is used to check if the file is sorted or not.
+-- sort -m [file_name1(and/or).file_type] [file_name2(and/or).file_type]: This command is used to merge the file_name1(and/or).file_type and file_name2(and/or).file_type and sort the output.
+-- sort -nr [file_name(and/or).file_type]: This command is used to sort the file in numerical order in reverse order.
+-- sort -k [column_number] [file_name(and/or).file_type]: This command is used to sort the file based on the column_number.
+-- sort -k [column_number] -n [file_name(and/or).file_type]: This command is used to sort the file based on the column_number in numerical order.
+-- sort -k [column_number] -r [file_name(and/or).file_type]: This command is used to sort the file based on the column_number in reverse order.
+-- sort -k [column_number] -n -r [file_name(and/or).file_type]: This command is used to sort the file based on the column_number in numerical order in reverse order.
+-- sort -M [file_name(and/or).file_type]: This command is used to sort the file based on the month.
+
+-- export: This command is used to export the environment variable.
+-- export [variable_name]=[variable_value]: This command is used to export the environment variable with the variable_name and variable_value.
