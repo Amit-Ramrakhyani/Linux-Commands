@@ -72,4 +72,11 @@ Detailed Linux Commands
 -- sort -M [file_name(and/or).file_type]: This command is used to sort the file based on the month.
 
 -- export: This command is used to export the environment variable.
+-- export -p: This command is used to export all the environment variables.
+-- export -p | grep [variable_name]: This command is used to export the environment variable with the variable_name.
+-- export -f function_name: This command is used to export the function with the function_name.
 -- export [variable_name]=[variable_value]: This command is used to export the environment variable with the variable_name and variable_value.
+-- echo $[variable_name]: This command is used to display the value of the environment variable with the variable_name.
+
+-- ssh [user_name]@[ip_address]: This command is used to connect to the remote machine with the user_name and ip_address.
+-- ssh [user_name]@[ip_address] -p [port_number]: This command is used to connect to the remote machine with the user_name, ip_address and port_number.
